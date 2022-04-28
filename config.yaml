@@ -22,12 +22,12 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
 
   - id: ombi-dataserve-top
     name: ombi.dataserve.top
     description: 'OMBI' # default=empty
-    url: 'https://ombi.dataserve.top'
+    url: 'https://ombi.dataserve.top/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
@@ -38,3 +38,4 @@ monitors:
     url: 'https://wan.dataserve.top:32400/'
     method: GET
     expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
