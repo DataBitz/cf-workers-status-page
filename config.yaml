@@ -32,26 +32,12 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
     
-  - id: testslashplex-dataserve
-    name: testslashplex.dataserve
-    description: 'Plex on DataServe' # default=empty
-    url: 'https://ombi.dataserve.top:443/'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
-    
   - id: plex-dataserve
     name: plex.dataserve
     description: 'Plex on DataServe' # default=empty
     url: 'http://wan.dataserve.top:32400/identity'
     method: GET
     expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: plex-dataserve2
-    name: 'DataServe Plex'
-    description: 'Plex on DataServe' # default=empty
-    url: 'http://wan.dataserve.top/identity'
-    method: GET
-    expectStatus: 503
-    linkable: false # allows the title to be a link, default=true
