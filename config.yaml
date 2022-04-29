@@ -2,7 +2,7 @@ settings:
   title: 'Status Page'
   url: 'https://cf-workers-status-page-production.dataserve.workers.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 21 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -37,5 +37,5 @@ monitors:
     description: 'Plex on DataServe' # default=empty
     url: 'https://wan.dataserve.top:32400/'
     method: GET
-    expectStatus: 200
+    expectStatus: 401
     linkable: false # allows the title to be a link, default=true
