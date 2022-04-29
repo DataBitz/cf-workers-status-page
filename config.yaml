@@ -35,7 +35,7 @@ monitors:
   - id: plex-dataserve
     name: DataServe Plex
     description: 'Plex on DataServe' # default=empty
-    url: 'https://wan.dataserve.top:32400/'
+    url: 'http://wan.dataserve.top:32400/'
     method: GET
     expectStatus: 401
     linkable: false # allows the title to be a link, default=true
