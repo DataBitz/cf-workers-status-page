@@ -32,6 +32,14 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
     
+  - id: testslashplex-dataserve
+    name: testslashplex.dataserve
+    description: 'Plex on DataServe' # default=empty
+    url: 'https://ombi.dataserve.top:443/'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+    
   - id: plex-dataserve
     name: plex.dataserve
     description: 'Plex on DataServe' # default=empty
