@@ -41,9 +41,9 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: plex-dataserve2
-    name: DataServe Plex
+    name: 'DataServe Plex'
     description: 'Plex on DataServe' # default=empty
-    url: 'http://wan.dataserve.top:32400/identity'
+    url: 'http://wan.dataserve.top/identity'
     method: GET
-    expectStatus: 200
+    expectStatus: 503
     linkable: false # allows the title to be a link, default=true
